@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Century Gothic;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html {
+    --s: 50px;
+    --c: #4a3549;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #381632dc 66%,#3d103f 68% 70%,#0000 72%;
+    background: 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+  }
+.title
+{
+    text-align: center;
+    text-transform: capitalize;
+    color: #bd3582;
+    margin: 10px 0;
+    position: relative;
+}
+.title::after
+{
+    content:"";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background-image: linear-gradient(to left, transparent 5%, #bd3582, #ff6062);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.team-row
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.member
+{
+    flex: 1 1 250px; 
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    max-width: 300px;
+    transition: all 0.3s;
+}
+.member:hover
+{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-20px);
+}
+.member img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #bd3582;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.member h2
+{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #726a95;
+    margin: 15px 0;
+}
+.member p
+{
+    font-size: 15px;
+    color: #838383;
+    line-height: 1.6;
+}
+
+.gfgcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.GFG 
+{
+        background-color: white;
+        border: 2px solid black;
+        color: #bd3582;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 30px;
+        cursor: pointer;
+   
+}

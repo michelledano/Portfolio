@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.75));
+    background-position: center;
+    background-size: cover;
+}
+#main {
+    border: solid;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 0 20% 0 20%;
+    padding: 50px;
+    gap: 20%;
+}
+.contents {
+    display: flex;
+    flex-direction: column;
+}
+.contents h1 {
+    font-size: 25px;
+    margin-top: 50px;
+}
+.contents h2 {
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 70%;
+}
+.contents h3 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+.contents ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+.contents ul li {
+    line-height: 25px;
+}
+.school {
+    position: relative;
+    right: 90px;
+    top: 21px;
+}
+
+img {
+    position: relative;
+    width: 30%;
+    height: 30vh;
+    right: 30px;
+    border-radius: 10px;
+}
+html {
+    --s: 50px;
+    --c: #4a3549;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #381632dc 66%,#3d103f 68% 70%,#0000 72%;
+    background: 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+  }
